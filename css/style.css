@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .countdown-wrap, .bg-cover {
   width: 50%;
   float: left;
-  background: #598;
+  background: #2196f3;
 }
 @media screen and (max-width: 992px) {
   .countdown-wrap, .bg-cover {
@@ -310,13 +310,14 @@ form label {
   display: inline-block;
   width: 120px;
   height: 120px;
-  background: rgba(255, 255, 255, 0.2);
+  background: #82b1ff;
   margin: 0 5px;
   position: relative;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+  box-shadow:2px 2px #00bcd4;
 }
 
 .simply-countdown > .simply-section > div {
