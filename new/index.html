@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>OPA! - Technical festival of MITS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Annual technical festival of MITS,Kochi" />
+		<meta name="keywords" content="Smart living,techfest,MITS,Opa" />
+		<meta name="author" content="https://anandhuajayakumar.github.io" />
+		<meta property="og:title" content=""/>
+		<meta property="og:image" content=""/>
+		<meta property="og:url" content=""/>
+		<meta property="og:site_name" content=""/>
+		<meta property="og:description" content=""/>
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:url" content="" />
+		<meta name="twitter:card" content="" />
+
+		<link rel="stylesheet" href="css/materialize.min.css">
+	</head>
+	<body>
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var d = new Date();
+				var n = d.getHours();
+				//n=;
+				if(((n>=0)&&(n<6))||((n>=21)&&(n<=23)))
+				{
+					$("body").css("backgroundImage","url(img/darksky.jpg");
+					$("body").css("backgroundSize","cover");
+				}
+				else if(n>=6&&n<=8)
+				{
+					$("body").css("backgroundImage","url(img/sunrise.jpg");
+					$("body").css("backgroundSize","cover");
+				}
+				else if(n>8&&n<17)
+				{
+					$("body").css("backgroundImage","url(img/noon.jpg");
+					$("body").css("backgroundSize","cover");
+				}
+				else if(n>=17&&n<19)
+				{
+					$("body").css("backgroundImage","url(img/sunset.jpg");
+					$("body").css("backgroundSize","cover");
+				}
+				else if(n>=19)
+				{
+					$("body").css("backgroundImage","url(img/night.png");
+					$("body").css("backgroundSize","cover");
+				}
+			});
+		</script>
+	</body>
+</html>
+
