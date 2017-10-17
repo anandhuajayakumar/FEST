@@ -1,40 +1,71 @@
 @import "https://fonts.googleapis.com/css?family=Bangers";
+@font-face {
+	font-family: "My Custom Font";
+    src: url("./PatinioBasica.ttf") format("truetype");
+}
+@font-face {
+	font-family: "My Custom Font2";
+    src: url("./Typo_Round_Bold_Demo.otf") format("truetype");
+}
 body {
-  margin: 0;
+	margin: 0;
 }
 .head{
 	letter-spacing:4px;
-	font-family: Bangers;
+	font-family: "My Custom Font";
 	font-size:100px;
-	color:#2962ff;
+	color:#f00;
+	z-index:1000;
 }
 .coming{
-	color:#fff;
+	color:#cbf;
 }
 .wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 75vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	height: 50vh;
+	z-index:0;
+}
+.form form input.subscribe-email{
+	background-color:white;
+	color:black;
+	-moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+    -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+}
+.form form button{
+	width: 130px;
+    height: 46px;
+    margin: 0;
+    padding: 0;
+    background: #555;
+    border: 0;
+	text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+    -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.25);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.25);
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
 }
 .time-to {
-  text-align: center;
-  font-family: Bangers;
-  color: white;
-  font-size: 35px;
-  letter-spacing: 2px;
+	text-align: center;
+	font-family: "My Custom Font2";
+	font-size: 35px;
+	letter-spacing: 2px;
 }
 .time-to span {
-  display: block;
-  font-size: 80px;
-  color: #2979ff ;
-}
-.row{
-	width:100%;
+	font-weight:bold;
+	font-family: Times New Roman;
+	display: block;
+	font-size: 70px;
+	color:#2962ff ;
 }
